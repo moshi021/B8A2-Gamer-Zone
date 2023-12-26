@@ -41,7 +41,7 @@ li a{
 
 .links li{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
     align-items: center;
     
