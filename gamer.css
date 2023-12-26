@@ -1,0 +1,81 @@
+/*work sans font */
+  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+/*shared styles */
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+
+/*header section */
+
+.logo img{
+    
+    max-width: 86px;
+    max-height: 40px;
+}
+
+.logo h3{
+    color: #0B0223;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.logo{
+    display: flex;
+    gap: 20px;
+    align-items: center;   
+}
+li a{
+    text-decoration: none;
+    text-align: center;
+    color: #3C354F;
+}
+
+.links ul{
+    
+    list-style: none;
+    gap: 30px;
+    display: flex;
+    text-align: center;
+}
+
+.links li{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.links a img{
+    margin-left: 10px;
+    max-width: 33px;
+    max-height: 24px;
+
+}
+
+.logo_links{
+    
+    padding: 10px;
+    height: 40px;
+    width: 262px;
+    border-radius: 8px;
+    background-color: rgba(11, 2  ,35, 0.10);
+}
+
+.links{
+    padding-top: 20px;
+    font-size: 18px;
+    color: #3C354F;
+    font-weight: 500;
+}
+
+nav{
+    max-height: 140px;
+    margin-left:160px ;
+    margin-right:160px ;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+
+}
