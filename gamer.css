@@ -79,3 +79,30 @@ nav{
     justify-content:space-between ;
 
 }
+
+/*for tab */
+@media screen and (max-width:769px){
+    nav{
+        margin-left: 0px;
+        margin-right: 0px;
+        flex-direction: column;
+    }
+}
+
+
+/*for mobile */
+@media  screen and (max-width:426px) {
+
+.links ul{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}    
+
+nav{
+    margin-left: 0px;
+    margin-right: 0px;
+    flex-direction: column;
+}
+
+}
