@@ -80,7 +80,77 @@ nav{
 
 }
 
+/*banner section */
+.banner_text {
+    padding-left: 240px;
+    padding-top: 150px;
+}
+.play{
+    color: #0B0223;
+    padding-left: 4px;
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.goat{
+    font-size: 5.5rem;
+    font-weight: 800;
+    margin: 0;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+
+}
+.sign_button{
+    color: #FFF;
+    font-size: 1.12rem;
+    font-weight: 600;
+    padding: 21px 40px;
+    border-radius: 48px;
+    background: var(--Linear, linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%));
+    border: 0;
+    }
+.go_button{
+    color: #FFF;
+    font-size: 1.12rem;
+    font-weight: 600;
+    padding: 21px 40px;
+    border-radius: 48px;
+    background: #4EC5F7;
+    border: 0;
+}
+
+.button{
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+.spec{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.spec img{
+    width: 24px;
+    height: 24px;
+}
+
+.banner{
+    display: flex;
+    gap: 90px;
+}
+
+.banner_img{
+    padding-top: 20px;
+}
+
 /*for tab */
+
+/*nav*/
 @media screen and (max-width:769px){
     nav{
         margin-left: 0px;
@@ -91,6 +161,8 @@ nav{
 
 
 /*for mobile */
+
+/*nav*/
 @media  screen and (max-width:426px) {
 
 .links ul{
