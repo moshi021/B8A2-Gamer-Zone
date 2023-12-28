@@ -8,13 +8,12 @@
 
 /*header section */
 
-.logo img{
-    
+.logo img{ 
     width: 86px;
     height: 40px;
 }
 
-.logo h3{
+.web_title{
     color: #0B0223;
     font-size: 2.5rem;
     font-weight: 700;
@@ -201,7 +200,11 @@ nav{
     margin-top: 80px;
     display: flex;
     gap: 250px;
-    margin-left: 150px;
+    margin-left: 150px;   
+}
+.play_images{
+    width: 0;
+    height: 0;
     
 }
 .play_texts h3{
@@ -213,21 +216,124 @@ nav{
 }
 
 .man_with_horse{
-    width: 634px;
+     width: 634px;
     height: 650px;
-    border-radius: 8px;
+    border-radius: 8px; 
+    
 
 }
 
 .taking_angela{
-    width: 318px;
+     width: 318px;
     height: 365px;
-    border-radius: 8px;
-    /* border: 10px solid #FFF; */
+    border-radius: 8px; 
     position: relative;
     right: 150px;
     top: -290px;
+    
 }
+
+/* games list */
+.games_list{
+    margin-top: 400px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin-left: 40px;   
+    
+}
+.games{
+    display: flex;
+    gap: 5px;
+    text-align: center;
+    align-items: center;
+    width: 220px;
+    height: 80px;
+}
+.next{
+    margin-left: 80px;
+}
+
+.games img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+
+/* footer */
+
+
+footer{
+    background: #0B0223;
+    margin-top: 50px;
+    
+}
+.footer_heading{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: auto;
+    width: 18%;
+    
+}
+.footer_heading h3{
+    color: #FFF;
+    font-size: 2.5rem;
+    font-weight: 700;
+    
+}
+
+.footer_heading img{ 
+    width: 86px;
+    height: 40px;
+
+}
+.footer_links ul{
+    list-style:none;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_links li{
+    text-decoration: none;
+}
+
+.footer_links li a {
+    color: #FFF;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.footer_logos{
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.terms{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.terms p{
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.rights{
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 50px;
+}
+
 
 /*for tab */
 
@@ -283,6 +389,24 @@ nav{
         padding-left: 100px;
 
     }
+
+    /* games list */
+    .games_list{
+        margin-top: 800px;
+        grid-template-columns: repeat(3,1fr);
+        margin-left: 100px;
+    }
+    .games{
+        gap: 5px;
+        text-align: left;
+        width: 200px;
+        height: 80px;
+    }
+    .next{
+        margin-left: 0px;
+    }
+    
+      
 }
 
 
@@ -349,6 +473,11 @@ nav{
     margin-top: 20px;
     display: grid;
     grid-template-columns:repeat(1,1fr);
+}
+
+footer{
+    width:800px;
+    height: auto;
 }
 
 
