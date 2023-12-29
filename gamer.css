@@ -181,19 +181,58 @@ nav{
     display: grid;
     grid-template-columns:repeat(4,1fr);
 }
-.card img{
+.card_img{
     height:400px ;
     width:340px ;
+    transition: filter 0.1s ease;  /*  */
 }
 .card p{
     max-width: 340px;
-    padding: 5px;
+    padding: 10px;
     text-align: center;
     color: #534C64;
     font-size: 1.25rem;
-    font-weight: 500;
-    
+    font-weight: 500;   
 }
+
+.card{ /* */
+    position: relative;
+    overflow: hidden;
+}
+
+.overplay{ /* */
+    position: absolute;
+    top: 150px;
+    left: 120px;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+}
+
+.overplay p{
+    color: #FF42A5;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+.overplay img{
+    width: 48px;
+    height: 48px;
+}
+.overplay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover .card_img{
+    filter: brightness(25%);
+}
+.card:hover .overplay {
+    opacity: 1;
+  }
+
 
 /* play instantly */
 .play_instantly{
@@ -219,8 +258,6 @@ nav{
      width: 634px;
     height: 650px;
     border-radius: 8px; 
-    
-
 }
 
 .taking_angela{
@@ -235,28 +272,41 @@ nav{
 
 /* games list */
 .games_list{
+    margin-left: 60px;
     margin-top: 400px;
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    margin-left: 40px;   
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
 }
 .games{
+    margin-left: 0px;
     display: flex;
-    gap: 5px;
-    text-align: center;
+    gap: 10px;
+    justify-content: center;
     align-items: center;
-    width: 220px;
+    width: 260px;
     height: 80px;
+    border: 2px solid transparent;
+    border-radius: 50px;
+
 }
-.next{
-    margin-left: 80px;
+.games_p{
+    color: #0B0223;
+    font-size: 18px;
+    font-weight: 600;
+}
+.games:hover{
+    border-color: #FF42A5;
+    
 }
 
+.games:hover .games_p{
+    color: #FF42A5;
+}
 .games img{
     width: 60px;
     height: 60px;
-    border-radius: 50px;
 }
 
 /* footer */
@@ -465,20 +515,33 @@ nav{
 
 /* online games section */
 .online_games_heading, .online_games_para{
-    width: 650px;
+    width: 700px;
 }
 
 .four_cards{
-    margin-left: 200px;
-    margin-top: 20px;
+    padding-left: 180px;
+    margin-left: 00px;
     display: grid;
-    grid-template-columns:repeat(1,1fr);
+    grid-template-columns:min-content;
+}
+
+.card_img{
+    width: 450px;
+}
+
+.games_list{
+    margin-left: 400px;
+    margin-top: 800px;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5px;
 }
 
 footer{
-    width:800px;
+    width:780px;
     height: auto;
 }
-
-
+.footer_heading{
+    width: 30%;
+}
 }
